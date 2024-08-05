@@ -6,13 +6,15 @@
   "author": "Patrick Hochstenbach <Patrick.Hochstenbach@UGent.be>",
   "license": "MIT",
   "scripts": {
-    "server": "npx ldn-inbox-server start-server --inbox-public"
+    "post-data": "cp data/*.jsonld inbox",
+    "handle-inbox": "npx ldn-inbox-server handler @inbox -hn @handler/notification_handler/multi.js",
+    "server": "npx ldn-inbox-server start-server",
+    "clean": "rm inbox/* error/* outbox/*"
   },
   "dependencies": {
     "commander": "^12.1.0",
-    "ldn-inbox-server": "^1.4.3",
+    "ldn-inbox-server": "^1.4.5",
     "log4js": "^6.9.1",
-    "node-fetch": "1.7.3",
-    "uuid": "^10.0.0"
+    "md5": "^2.3.0"
   }
 }

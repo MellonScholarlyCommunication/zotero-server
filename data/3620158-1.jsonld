@@ -1,0 +1,16 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "urn:uuid:9ec17fd7-f0f1-4d97-b421-29bfad935aad",
+  "type": "Offer",
+  "published": "2024-08-01T07:00:11.000Z",
+  "actor": {
+    "id": "http://localhost/profile/card#me",
+    "name": "Mastodon client",
+    "inbox": "http://192.87.108.242/service/m/inbox/",
+    "type": "Service"
+  },
+  "object": {
+    "id": "https://journal.code4lib.org/articles/17823",
+    "type": "Document"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "id": "/EventNotificationsOffer",
+    "type": "object",
+    "properties": {
+      "id": {"type": "string"},
+      "type": {"type": "string"},
+      "actor": {
+        "type": "object",
+        "properties": {
+            "id": {"type": "string"},
+            "type": {"type": "string"},
+            "inbox": {"type": "string"} 
+        },
+        "required": [ "id", "inbox" ]
+      },
+      "object": {
+        "type": "object",
+        "properties": {
+            "id": {"type": "string"}
+        },
+        "oneOf": [
+            {
+                "properties" : {
+                    "type": {"type": "string"}
+                }
+            },
+            {
+                "properties" : {
+                    "type": {
+                        "type": "array",
+                        "items": {"type": "string"}
+                    }
+                }
+            }
+        ],
+        "required": [ "id" ]
+      } 
+    },
+    "required": ["id", "type", "actor", "object"]
+}

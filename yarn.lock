@@ -150,10 +150,10 @@ jsonschema@^1.4.1:
   resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.4.1.tgz#cc4c3f0077fb4542982973d8a083b6b34f482dab"
   integrity sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==
 
-ldn-inbox-server@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/ldn-inbox-server/-/ldn-inbox-server-1.4.3.tgz#ddf3fddbaa24420f4df0ba532fc14b22de9016df"
-  integrity sha512-5XEEjfWczjod7Zmdr9BqJhFsTh1vrcQswV6QP4v7vST0u03WOQCzBuUpXPoW0edCY50V8wlrENtfQOoWGX2Jyg==
+ldn-inbox-server@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/ldn-inbox-server/-/ldn-inbox-server-1.4.5.tgz#c136e61600ee04e85ef2024362baaf9a2aeeb032"
+  integrity sha512-UFdF/CVCVT/8776bwd8rxEQmfOUXFPb4I84dX5Uqo0UAEB7clWwpo9DVZkeIq63q1LTSo13IdesQzJv+BdOMaw==
   dependencies:
     commander "^12.0.0"
     dotenv "^16.4.5"
@@ -331,11 +331,6 @@ upath@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
   integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==
-
-uuid@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-10.0.0.tgz#5a95aa454e6e002725c79055fd42aaba30ca6294"
-  integrity sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
 
 uuid@^9.0.1:
   version "9.0.1"
