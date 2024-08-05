@@ -11,7 +11,15 @@
                         ]
                     ]
                  },
-                 "./handler/zotero_lookup.js"
+                 "./handler/zotero_lookup.js",
+                 {
+                    "id": "./handler/announce_result.js",
+                    "actor": {
+                        "id": "http://localhost:8000/profile/card#me" ,
+                        "inbox": "http://localhost:8000/inbox/" ,
+                        "type": "Service"
+                    }
+                 }
                 ]
             ]
         }
