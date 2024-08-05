@@ -1,5 +1,5 @@
 const logger = require('ldn-inbox-server').getLogger();
-const { parseAsJSON , backOff_fetch } = require('ldn-inbox-server');
+const { parseAsJSON } = require('ldn-inbox-server');
 const fsPath = require('path');
 const fs = require('fs');
 const md5 = require('md5');
@@ -34,7 +34,7 @@ async function handle({path,options,config}) {
         const outboxFile = options['outbox'] + '/' + md5(data) + '.jsonld';
 
         ensureDirectoryExistence(outboxFile);
-        
+
         logger.info(`storing Offer to ${outboxFile}`);
 
         fs.writeFileSync(outboxFile,data);
