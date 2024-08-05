@@ -1,0 +1,18 @@
+{
+  "name": "zotero-server",
+  "version": "1.0.0",
+  "description": "A Zotore Service Node",
+  "main": "index.js",
+  "author": "Patrick Hochstenbach <Patrick.Hochstenbach@UGent.be>",
+  "license": "MIT",
+  "scripts": {
+    "server": "npx ldn-inbox-server start-server --inbox-public"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ldn-inbox-server": "^1.4.3",
+    "log4js": "^6.9.1",
+    "node-fetch": "1.7.3",
+    "uuid": "^10.0.0"
+  }
+}
