@@ -1,6 +1,6 @@
 node_modules
 inbox/**
 error/** 
-public/outbox/**
+outbox/**
 public/result/**
 .env

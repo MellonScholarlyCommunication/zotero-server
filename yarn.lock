@@ -150,10 +150,10 @@ jsonschema@^1.4.1:
   resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.4.1.tgz#cc4c3f0077fb4542982973d8a083b6b34f482dab"
   integrity sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==
 
-ldn-inbox-server@^1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/ldn-inbox-server/-/ldn-inbox-server-1.4.5.tgz#c136e61600ee04e85ef2024362baaf9a2aeeb032"
-  integrity sha512-UFdF/CVCVT/8776bwd8rxEQmfOUXFPb4I84dX5Uqo0UAEB7clWwpo9DVZkeIq63q1LTSo13IdesQzJv+BdOMaw==
+ldn-inbox-server@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/ldn-inbox-server/-/ldn-inbox-server-1.4.6.tgz#79760e9a9a132a55de48ee39f2f46f75c9952c7b"
+  integrity sha512-iBnbzg+cIoypI6h3U3nH1qF38OyY1b+L4ZPBayglT1lIkYEIZpDx/2uKKX7SmzR0x4BbNhFhHOFLLJ1y4cUglQ==
   dependencies:
     commander "^12.0.0"
     dotenv "^16.4.5"
@@ -161,7 +161,7 @@ ldn-inbox-server@^1.4.5:
     jsonpath "^1.1.1"
     jsonschema "^1.4.1"
     md5 "^2.3.0"
-    mellon-server "^1.0.8"
+    mellon-server "^1.0.9"
     node-fetch "1.7.3"
     piscina "^4.4.0"
     proper-lockfile "^4.1.2"
@@ -196,10 +196,10 @@ md5@^2.3.0:
     crypt "0.0.2"
     is-buffer "~1.1.6"
 
-mellon-server@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/mellon-server/-/mellon-server-1.0.8.tgz#218f293a84c6b745f1cb59c634e4d7e08692331e"
-  integrity sha512-JooHrNe+1I9o1Mim//Ul0RZMXWc98/1oMv9BIYyEM24DwNXDCX3sfR/EwthNv/qMQ/+lu9RO+UuUzhiiWMck4Q==
+mellon-server@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/mellon-server/-/mellon-server-1.0.9.tgz#f0a5c3a42bec2f763390ae37e37d5ec111679433"
+  integrity sha512-mvLM/MyXEVMcGlNpVDTJ0clDirQMb17Yp0KimwU2taio/pQCjeC42dWGF873MoQeXch3f/wOuERnB24auwkdbA==
   dependencies:
     commander "^12.0.0"
     http "^0.0.1-security"

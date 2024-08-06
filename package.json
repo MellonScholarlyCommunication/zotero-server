@@ -6,14 +6,14 @@
   "author": "Patrick Hochstenbach <Patrick.Hochstenbach@UGent.be>",
   "license": "MIT",
   "scripts": {
-    "post-data": "cp data/*.jsonld inbox",
+    "post-data": "curl -X POST -H 'Content-Type: application/ld+json' --data-binary '@data/example.jsonld' http://localhost:8000/inbox/",
     "handle-inbox": "npx ldn-inbox-server handler @inbox -hn @handler/notification_handler/multi.js",
     "server": "npx ldn-inbox-server start-server",
     "clean": "rm inbox/* error/* outbox/*"
   },
   "dependencies": {
     "commander": "^12.1.0",
-    "ldn-inbox-server": "^1.4.5",
+    "ldn-inbox-server": "^1.4.6",
     "log4js": "^6.9.1",
     "md5": "^2.3.0",
     "uuid": "^10.0.0"
