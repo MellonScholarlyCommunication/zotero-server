@@ -9,7 +9,7 @@
     "post-data": "curl -X POST -H 'Content-Type: application/ld+json' --data-binary '@data/example.jsonld' http://localhost:8000/inbox/",
     "handle-inbox": "npx ldn-inbox-server handler @inbox -hn @handler/notification_handler/multi.js",
     "server": "npx ldn-inbox-server start-server",
-    "clean": "rm inbox/* error/* outbox/*"
+    "clean": "rm -rf inbox/* error/* outbox/* public/result/"
   },
   "dependencies": {
     "commander": "^12.1.0",
