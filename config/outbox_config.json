@@ -1,0 +1,11 @@
+{
+    "notification_handler": {
+        "multi": {
+            "handlers": [
+                [
+                "@handler/notification_handler/send_notification.js"
+                ]
+            ]
+        }
+    }
+}
