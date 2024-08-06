@@ -5,7 +5,7 @@
   "published": "2024-08-01T07:00:11.000Z",
   "actor": {
     "id": "http://192.87.108.242/service/m/profile/card#me",
-    "name": "Mastodon client",
+    "name": "Mastodon Bot",
     "inbox": "http://192.87.108.242/service/m/inbox/",
     "type": "Service"
   },
