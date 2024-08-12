@@ -1,5 +1,5 @@
 const logger = require('ldn-inbox-server').getLogger();
-const { parseAsJSON } = require('ldn-inbox-server');
+const { parseAsJSON , generateId , generatePublished } = require('ldn-inbox-server');
 const fsPath = require('path');
 const fs = require('fs');
 const md5 = require('md5');
@@ -22,8 +22,11 @@ async function handle({path,options,config}) {
 
         const data = JSON.stringify({
             '@context': "https://www.w3.org/ns/activitystreams" ,
+            id: generateId(),
             type: 'Announce',
+            published: generatePublished(),
             actor: config['actor'],
+            inReplyTo: notification['id'],
             object: {
                 id: options['service_result'],
                 type: "Document"
