@@ -1,20 +1,4 @@
 {
-    "registry": [
-        { "path": "inbox/.*" , 
-          "with": {
-            "url": "inbox/",
-            "inbox": "./inbox",
-            "inboxPublic": 1,
-            "inboxWritable": 1
-        }},
-        { "path": "outbox/.*" , 
-          "with": {
-            "url": "outbox/",
-            "inbox": "./outbox",
-            "inboxPublic": 1,
-            "inboxWritable": 0
-        }}
-    ], 
     "notification_handler": {
         "multi": {
             "handlers": [
@@ -31,11 +15,17 @@
                  {
                     "id": "./handler/announce_result.js",
                     "actor": {
-                        "id": "http://localhost:8000/profile/card#me" ,
-                        "name": "Mastodon Bot" ,
-                        "inbox": "http://localhost:8000/inbox/" ,
+                        "id": "http://192.87.108.242/service/x/profile/card#me",
+                        "name": "Zotero Service Provider",
+                        "inbox": "http://192.87.108.242/service/x/inbox/",
                         "type": "Service"
-                    }
+                    },
+                    "origin": {
+                        "id": "http://192.87.108.242/service/x/profile/card#me",
+                        "name": "Zotero Service Provider",
+                        "inbox": "http://192.87.108.242/service/x/inbox/",
+                        "type": "Service"
+                    } 
                  }
                 ]
             ]

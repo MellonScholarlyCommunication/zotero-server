@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "commander": "^12.1.0",
-    "ldn-inbox-server": "^1.4.9",
+    "ldn-inbox-server": "^1.5.1",
     "log4js": "^6.9.1",
     "md5": "^2.3.0",
     "uuid": "^10.0.0"

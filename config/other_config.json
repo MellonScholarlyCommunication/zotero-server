@@ -1,0 +1,18 @@
+{
+    "registry": [
+        { "path": "inbox/.*" , 
+          "with": {
+            "url": "inbox/",
+            "inbox": "./inbox",
+            "inboxPublic": 1,
+            "inboxWritable": 1
+        }},
+        { "path": "outbox/.*" , 
+          "with": {
+            "url": "outbox/",
+            "inbox": "./outbox",
+            "inboxPublic": 1,
+            "inboxWritable": 0
+        }}
+    ]
+}

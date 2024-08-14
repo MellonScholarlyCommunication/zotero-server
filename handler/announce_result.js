@@ -26,6 +26,7 @@ async function handle({path,options,config}) {
             type: 'Announce',
             published: generatePublished(),
             actor: config['actor'],
+            orgin: config['origin'],
             inReplyTo: notification['id'],
             object: {
                 id: options['service_result'],
