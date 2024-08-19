@@ -1,5 +1,5 @@
 const logger = require('ldn-inbox-server').getLogger();
-const { parseAsJSON , generateId , generatePublished } = require('ldn-inbox-server');
+const { generateId , generatePublished } = require('ldn-inbox-server');
 const fsPath = require('path');
 const fs = require('fs');
 const md5 = require('md5');
