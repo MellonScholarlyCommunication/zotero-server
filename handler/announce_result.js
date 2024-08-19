@@ -23,7 +23,7 @@ async function handle({path,options,config,notification}) {
         let data;
 
         if (service_result) {
-            data = JSON.stringify({
+            data = {
                 '@context': "https://www.w3.org/ns/activitystreams" ,
                 id: generateId(),
                 type: 'Announce',
@@ -36,10 +36,10 @@ async function handle({path,options,config,notification}) {
                     type: "Document"
                 },
                 target: notification['actor']
-            },null,4);
+            };
         }
         else {
-            data = JSON.stringify({
+            data = {
                 '@context': "https://www.w3.org/ns/activitystreams" ,
                 id: generateId(),
                 type: 'Reject',
@@ -49,16 +49,18 @@ async function handle({path,options,config,notification}) {
                 inReplyTo: notification['id'],
                 object: notification,
                 target: notification['actor']
-            },null,4); 
+            }; 
         }
 
-        const outboxFile = options['outbox'] + '/' + md5(data) + '.jsonld';
+        const dataText = JSON.stringify(data,null,4);
+
+        const outboxFile = options['outbox'] + '/' + md5(dataText) + '.jsonld';
 
         ensureDirectoryExistence(outboxFile);
 
-        logger.info(`storing Offer to ${outboxFile}`);
+        logger.info(`storing ${data.type} to ${outboxFile}`);
 
-        fs.writeFileSync(outboxFile,data);
+        fs.writeFileSync(outboxFile,dataText);
 
         return { path, options, success: true };
     }
