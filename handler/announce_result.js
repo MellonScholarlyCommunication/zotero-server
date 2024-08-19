@@ -4,7 +4,7 @@ const fsPath = require('path');
 const fs = require('fs');
 const md5 = require('md5');
 
-async function handle({path,options,config}) {
+async function handle({path,options,config,notification}) {
     logger.info(`parsing notification ${path}`);
 
     if (! config) {
@@ -18,22 +18,39 @@ async function handle({path,options,config}) {
     }
 
     try {
-        const notification = parseAsJSON(path);
+        const service_result = options['service_result'];
 
-        const data = JSON.stringify({
-            '@context': "https://www.w3.org/ns/activitystreams" ,
-            id: generateId(),
-            type: 'Announce',
-            published: generatePublished(),
-            actor: config['actor'],
-            origin: config['origin'],
-            inReplyTo: notification['id'],
-            object: {
-                id: options['service_result'],
-                type: "Document"
-            },
-            target: notification['actor']
-        },null,4);
+        let data;
+
+        if (service_result) {
+            data = JSON.stringify({
+                '@context': "https://www.w3.org/ns/activitystreams" ,
+                id: generateId(),
+                type: 'Announce',
+                published: generatePublished(),
+                actor: config['actor'],
+                origin: config['origin'],
+                inReplyTo: notification['id'],
+                object: {
+                    id: options['service_result'],
+                    type: "Document"
+                },
+                target: notification['actor']
+            },null,4);
+        }
+        else {
+            data = JSON.stringify({
+                '@context': "https://www.w3.org/ns/activitystreams" ,
+                id: generateId(),
+                type: 'Reject',
+                published: generatePublished(),
+                actor: config['actor'],
+                origin: config['origin'],
+                inReplyTo: notification['id'],
+                object: notification,
+                target: notification['actor']
+            },null,4); 
+        }
 
         const outboxFile = options['outbox'] + '/' + md5(data) + '.jsonld';
 
