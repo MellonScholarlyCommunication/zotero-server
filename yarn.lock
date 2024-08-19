@@ -155,10 +155,10 @@ jsonschema@^1.4.1:
   resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.4.1.tgz#cc4c3f0077fb4542982973d8a083b6b34f482dab"
   integrity sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==
 
-ldn-inbox-server@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/ldn-inbox-server/-/ldn-inbox-server-1.5.1.tgz#ad1795b7afe1392d5e9787368edfb3d02cca21f4"
-  integrity sha512-MpCYk39MPKoR5wN2aAMOCvAMfJUUwdIC4UrMMfNlt2N4duqvjXDIsuwGDwx36/IbddyG/tDxpYjvVKd3upd5zQ==
+ldn-inbox-server@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/ldn-inbox-server/-/ldn-inbox-server-1.5.5.tgz#e96264aa549d4e1e5f52a340ff4e8920920bb2bb"
+  integrity sha512-VjhfkVtixIr//tDAH13IjHjPnQLy9jE4wlfZAf51yBl4cUwkulqalH7aJGpa0NnsGS6rRfr3fDYR3hEe7bcLPQ==
   dependencies:
     commander "^12.0.0"
     dotenv "^16.4.5"
