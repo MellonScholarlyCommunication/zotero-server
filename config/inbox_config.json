@@ -15,15 +15,15 @@
                  {
                     "id": "./handler/announce_result.js",
                     "actor": {
-                        "id": "http://192.87.108.242/service/z/profile/card#me",
+                        "id": "https://192.87.108.242/service/z/profile/card#me",
                         "name": "Zotero Service Provider",
-                        "inbox": "http://192.87.108.242/service/z/inbox/",
+                        "inbox": "https://192.87.108.242/service/z/inbox/",
                         "type": "Service"
                     },
                     "origin": {
-                        "id": "http://192.87.108.242/service/z/profile/card#me",
+                        "id": "https://192.87.108.242/service/z/profile/card#me",
                         "name": "Zotero Service Provider",
-                        "inbox": "http://192.87.108.242/service/z/inbox/",
+                        "inbox": "https://192.87.108.242/service/z/inbox/",
                         "type": "Service"
                     } 
                  }
