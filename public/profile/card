@@ -3,9 +3,9 @@
 
 <>
     a foaf:PersonalProfileDocument;
-    foaf:maker <http://192.87.108.242/service/x/profile/card#me>;
-    foaf:primaryTopic <http://192.87.108.242/service/x/profile/card#me>.
+    foaf:maker <http://mycontributions.info/service/x/profile/card#me>;
+    foaf:primaryTopic <http://mycontributions.info/service/x/profile/card#me>.
 
-<http://192.87.108.242/service/x/profile/card#me>
+<http://mycontributions.info/service/x/profile/card#me>
     foaf:name "Zotoro Web Service";
     a foaf:Person.

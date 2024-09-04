@@ -29,9 +29,9 @@ Example incoming notification:
   "type": "Offer",
   "published": "2024-08-01T07:00:11.000Z",
   "actor": {
-    "id": "http://192.87.108.242/service/m/profile/card#me",
+    "id": "http://mycontributions.info/service/m/profile/card#me",
     "name": "Mastodon Bot",
-    "inbox": "http://192.87.108.242/service/m/inbox/",
+    "inbox": "http://mycontributions.info/service/m/inbox/",
     "type": "Service"
   },
   "object": {
@@ -64,9 +64,9 @@ Example outgoing notification:
         "type": "Document"
     },
     "target": {
-        "id": "http://192.87.108.242/service/m/profile/card#me",
+        "id": "http://mycontributions.info/service/m/profile/card#me",
         "name": "Mastodon Bot",
-        "inbox": "http://192.87.108.242/service/m/inbox/",
+        "inbox": "http://mycontributions.info/service/m/inbox/",
         "type": "Service"
     }
 }
