@@ -30,6 +30,7 @@ async function handle({path,options,config,notification}) {
                 published: generatePublished(),
                 actor: config['actor'],
                 origin: config['origin'],
+                context: notification['object']['id'],
                 inReplyTo: notification['id'],
                 object: {
                     id: options['service_result'],
@@ -46,6 +47,7 @@ async function handle({path,options,config,notification}) {
                 published: generatePublished(),
                 actor: config['actor'],
                 origin: config['origin'],
+                context: notification['object']['id'],
                 inReplyTo: notification['id'],
                 object: notification,
                 target: notification['actor']
