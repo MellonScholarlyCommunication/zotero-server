@@ -1,5 +1,4 @@
 const logger = require('ldn-inbox-server').getLogger();
-const { parseAsJSON } = require('ldn-inbox-server');
 const { zoteroLookup } = require('../lib/zotero');
 const fsPath = require('path');
 const fs = require('fs');
