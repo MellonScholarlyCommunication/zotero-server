@@ -8,6 +8,12 @@ An experimental Zotero Service Provider using the [Event Notification](https://w
 yarn install
 ```
 
+## Configuration
+
+```
+cp .env-example .env
+```
+
 ## Run the server
 
 ```
