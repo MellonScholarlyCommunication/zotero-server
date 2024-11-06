@@ -46,7 +46,9 @@ async function handle({path,options,config,notification}) {
     catch(e) {
         logger.error(`failed to process ${path}`);
         logger.error(e);
-        return { path, options, success: false };
+        options['service_error'] = e.message;
+        // Return a true in order to send the correct error message
+        return { path, options, success: true };
     }
 }
 

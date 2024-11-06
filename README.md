@@ -22,11 +22,19 @@ yarn run server
 
 ## Add a demo notification to the inbox 
 
+Post an example that should result in successful lookup
+
 ```
-yarn run post-data
+yarn run post-data 
 ```
 
-Example incoming notification:
+Post an example that should result in a failed lookup
+
+```
+yarn run post-fail
+```
+
+Example notification:
 
 ```
 {

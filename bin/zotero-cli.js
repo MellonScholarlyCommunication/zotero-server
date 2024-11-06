@@ -12,6 +12,11 @@ if (! url) {
 main(url);
 
 async function main(url) {
-    const response = await zoteroLookup(url);
-    console.log(response);
+    try {
+        const response = await zoteroLookup(url);
+        console.log(response);
+    }
+    catch (e) {
+        console.error(`error: ${e.message}`);
+    }
 }

@@ -19,6 +19,7 @@ async function handle({path,options,config,notification}) {
 
     try {
         const service_result = options['service_result'];
+        const service_error  = options['service_error'];
 
         let data;
 
@@ -50,7 +51,8 @@ async function handle({path,options,config,notification}) {
                 context: notification['object']['id'],
                 inReplyTo: notification['id'],
                 object: notification,
-                target: notification['actor']
+                target: notification['actor'],
+                summary: service_error
             }; 
         }
 
