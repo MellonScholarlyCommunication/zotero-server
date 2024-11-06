@@ -1,7 +1,7 @@
 {
-  "name": "zotero-server",
+  "name": "metadata-server",
   "version": "1.0.0",
-  "description": "A Zotore Service Node",
+  "description": "A metadata lookup service node using Zotero",
   "main": "index.js",
   "author": "Patrick Hochstenbach <Patrick.Hochstenbach@UGent.be>",
   "license": "MIT",

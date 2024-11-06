@@ -1,4 +1,4 @@
-# Zotero Server
+# Metadata Server
 
 An experimental Zotero Service Provider using the [Event Notification](https://www.eventnotifications.net) protocol.
 
@@ -46,6 +46,8 @@ Example incoming notification:
   }
 }
 ```
+
+where `$.object.id` is the URL for which a JSON CSL result should be created.
 
 ## Process the inbox
 
